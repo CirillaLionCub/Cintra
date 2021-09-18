@@ -15,5 +15,14 @@ public class CustomScanner {
         System.out.println("Proszę, podaj pierwszą liczbę");
         int Cyfra = cyfr.nextInt();
         System.out.println("Kwadrat tej liczby to: " + Cyfra*Cyfra);
+
+        Scanner nameYours = new Scanner(System.in); // tworzenie nowego obiektu klasy Scanner. Zmienna o nazwie nameYours
+        System.out.println("Is it true that the North is being harrassed by the Whitewalkers? Enter: yes, no or dunno");
+        String yes = nameYours.nextLine();
+        System.out.println(" You know nothing, John Snow!");
+        String no = nameYours.nextLine();
+        System.out.println(" You must be from the North yourself!");
+        String dunno = nameYours.nextLine();
+        System.out.println(" Are you Cersai?");
     }
 }
