@@ -26,22 +26,20 @@ public class Calculator {
         int Cyfra = cyfr.nextInt();
         System.out.println("Proszę, podaj drugą liczbę");
         int liczba = cyfr.nextInt();
-        int result1 = Cyfra*Cyfra;
-        float result2 = Cyfra*liczba;
-        System.out.println("Kwadrat pierwszej liczby to: " + Cyfra*Cyfra);
-        System.out.println("Wynik mnożenia tych dwóch liczb to: " + Cyfra*liczba);
-        System.out.println("A mnożenie kwadratu oraz drugiej liczby daje: " + result1*liczba);
-        System.out.println("Wynik dzielenia obu rezultatów daje: " + result1/result2);
-
+        int result1 = Cyfra * Cyfra;
+        float result2 = Cyfra * liczba;
         int addition = Cyfra + liczba;
         int subtraction = Cyfra - liczba;
         int multiplication = Cyfra * liczba;
         float division = Cyfra / liczba;
         int mod = Cyfra%liczba;
 
+        System.out.println("Kwadrat pierwszej liczby to: " + Cyfra*Cyfra);
+        System.out.println("Mnożenie kwadratu oraz drugiej liczby daje: " + result1*liczba);
+        System.out.println("Wynik dzielenia kwadratu pierwszej liczby przez wynik mnożenia obu liczb to: " + result1/result2);
         System.out.println ("Wynik dodawania obu liczb: " + addition);
-        System.out.println ("Wynik odejmowania obu liczb: " + subtraction);
-        System.out.println ("Wynik mnożenia obu liczb: " + multiplication);
+        System.out.println ("Wynik odejmowania: " + subtraction);
+        System.out.println ("Wynik mnożenia: " + multiplication);
         System.out.println ("Wynik dzielenia pierwszej liczby przez drugą: " + division);
         System.out.println ("Wynik modulo dla obu liczb: " + mod);
     }
