@@ -4,3 +4,5 @@ runConfigurations.xml
 vcs.xml
 workspace.xml
 JavaFirst.iml
+/out/
+
