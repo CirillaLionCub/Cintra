@@ -4,16 +4,22 @@ public class TablesAllaConv {
 
         int[] numbers = new int[]{1, 3, 5, 7, 0};
 
-        for (int i = 0; i < (numbers.length / 2); i++) {
+        for (int i = 0; i < (numbers.length / 2); i++) { //pokazuje dokad petla ma isc a potem sie przerwac
+            // jak parzystla liczba np 6 to wtedy do 3
             int temp = numbers[i];
             numbers[i] = numbers[numbers.length - 1 - i]; // czyli numers length to 6 wartosci w zbiorze, indexu jest zawsze o 1 mniej
             //czyli 6-1=5 miejsc w indexie. number i to ejst miejsce w indexie. Czyli 5 - nr indeksu 0 =5 - zajmie ta pozycja 5 nr w indeksie
             // 5- nr indeksu 3 = 2 miejsce w indexie
-            numbers[numbers.length - 1 - i] = temp;
+            numbers[numbers.length - 1 - i] = temp; //zapetlenie tempa
 
         }
         for (int number : numbers) {
             System.out.println(number + " ");
+
+            // tutaj ta petla moze alternatownie wygladac tak
+            /* for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+             */
         }
     }
 }
